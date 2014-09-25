@@ -1,0 +1,17 @@
+<apex:page showHeader="false" sidebar="false" docType="html">
+<html ng-App="MenuApp">
+    <head>
+        <link rel="stylesheet" href="{!URLFOR($Resource.resources, 'css/menuBar.css')}"/> <!-- CSS for menu bar -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/> <!-- Font Awesome Icons-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- jQuery --> 
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script> <!-- Angular -->
+        <script src="{!URLFOR($Resource.resources, 'js/lib/jquery.transit.js')}"/> <!-- Transit Animation plugin -->
+        <script src="{!URLFOR($Resource.resources, 'js/menuApp.js')}"/> <!-- Menu Controller -->
+        <script src="{!URLFOR($Resource.resources, 'js/controllers/menuController.js')}"/> <!-- Menu Controller -->
+        <script src="{!URLFOR($Resource.resources, 'js/directives/barMenu.js')}"/> <!-- Bar Menu Directive -->
+    </head>
+    <body ng-controller="MenuController">
+        <bar-menu menu-items="menuItems"/>      
+    </body>
+</html>
+</apex:page>
